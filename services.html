@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - AgriConnect</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> AgriConnect
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schemes.html">Govt Schemes</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="registration.html" class="btn-primary">Register</a></li>
+                <li><a href="#contact" class="btn-primary-outline">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 40vh; background: url('images/hero-bg.png') center/cover no-repeat;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal" style="margin-top: 6rem;">
+            <h1 class="hero-title" style="font-size: 3rem;">Our <span>Services</span></h1>
+            <p class="hero-subtitle">Comprehensive support and services tailored for the modern farmer.</p>
+        </div>
+    </header>
+
+    <!-- Services Grid Section -->
+    <section class="schemes-section">
+        <div class="section-header reveal">
+            <h2>What We Offer</h2>
+            <p>From testing your soil to connecting you with expert agronomists.</p>
+        </div>
+        
+        <div class="schemes-grid" id="schemes-grid">
+            <div class="scheme-card reveal">
+                <div class="card-icon">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge success">Testing</span>
+                    <h3>Soil Health Testing</h3>
+                    <p>Get a comprehensive analysis of your soil's macronutrients, micronutrients, and pH levels to determine the perfect crop and fertilizer choices.</p>
+                </div>
+            </div>
+
+            <div class="scheme-card reveal">
+                <div class="card-icon">
+                    <i class="fa-solid fa-tractor"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge warning">Equipment</span>
+                    <h3>Equipment Rental</h3>
+                    <p>Rent high-quality, modern farming equipment including tractors, harvesters, and irrigation systems at subsidized rates.</p>
+                </div>
+            </div>
+
+            <div class="scheme-card reveal">
+                <div class="card-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge info">Advisory</span>
+                    <h3>Expert Agronomy Consult</h3>
+                    <p>Connect with agriculture experts and scientists for personalized guidance on pest control, crop selection, and yield improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Request Form -->
+    <section class="service-request-section">
+        <div class="service-request-container">
+            <div class="service-request-card reveal">
+                <div class="form-header">
+                    <h2>Request a Service</h2>
+                    <p>Fill in your details and our team will reach out to schedule your service.</p>
+                </div>
+                <form id="service-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="service-name">Your Name *</label>
+                            <input type="text" id="service-name" class="form-control" required placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="service-phone">Phone Number *</label>
+                            <input type="tel" id="service-phone" class="form-control" required placeholder="10-digit mobile">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-type">Service Type *</label>
+                        <select id="service-type" class="form-control" required>
+                            <option value="">Select a service</option>
+                            <option value="soil_testing">Soil Health Testing</option>
+                            <option value="equipment_rental">Equipment Rental</option>
+                            <option value="expert_consult">Expert Agronomy Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-details">Additional Details</label>
+                        <textarea id="service-details" class="form-control" placeholder="Describe your requirements, preferred dates, location, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit large">Submit Request <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col branding">
+                <a href="index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-leaf"></i> AgriConnect
+                </a>
+                <p>Empowering the backbone of our nation. A dedicated portal bridging the gap between farmers and government initiatives.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schemes.html">Schemes & Subsidies</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="registration.html">Farmer Registration</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Important Schemes</h4>
+                <ul>
+                    <li><a href="#">PM-Kisan</a></li>
+                    <li><a href="#">Fasal Bima Yojana</a></li>
+                    <li><a href="#">Kisan Credit Card</a></li>
+                    <li><a href="#">e-NAM</a></li>
+                    <li><a href="#">Soil Health Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-info">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Krishi Bhawan, New Delhi</li>
+                    <li><i class="fa-solid fa-envelope"></i> help@agriconnect.gov</li>
+                    <li><i class="fa-solid fa-phone"></i> Toll-Free: 1800-180-1551</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgriConnect Portal. All rights reserved. Designed for sustainable farming.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+    <script src="service-handler.js"></script>
+</body>
+</html>

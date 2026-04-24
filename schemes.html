@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes - AgriConnect</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .scheme-detail-card {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid #E2E8F0;
+            transition: var(--transition);
+        }
+        .scheme-detail-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-5px);
+        }
+        .scheme-detail-card h3 {
+            font-size: 1.75rem;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+        .requirements-box {
+            background: #F8FAFC;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .requirements-box h4 {
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            font-size: 1.1rem;
+        }
+        .requirements-box ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+        .requirements-box li {
+            margin-bottom: 0.5rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+        .past-scheme {
+            background: #F1F5F9;
+            border-left: 4px solid #94A3B8;
+        }
+        .past-scheme h3 {
+            color: #475569;
+        }
+        .past-scheme .requirements-box {
+            background: #E2E8F0;
+            border-left-color: #64748B;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> AgriConnect
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schemes.html" class="active">Govt Schemes</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="registration.html" class="btn-primary">Register</a></li>
+                <li><a href="index.html#contact" class="btn-primary-outline">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 40vh; background: url('images/hero-bg.png') center/cover no-repeat;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal" style="margin-top: 6rem;">
+            <h1 class="hero-title" style="font-size: 3rem;">Government <span>Schemes</span></h1>
+            <p class="hero-subtitle">Comprehensive details on active and past agricultural schemes and their application requirements.</p>
+        </div>
+    </header>
+
+    <!-- Schemes Detailed Section -->
+    <section class="schemes-section" style="max-width: 900px; margin: 0 auto;">
+        <div class="section-header reveal">
+            <h2>Active Schemes</h2>
+            <p>Currently running government schemes available for farmer enrollment.</p>
+        </div>
+        
+        <div class="scheme-detail-card reveal">
+            <span class="category-badge">Finance</span>
+            <h3>Pradhan Mantri Kisan Samman Nidhi (PM-Kisan)</h3>
+            <p>The PM-KISAN scheme aims to supplement the financial needs of Small and Marginal farmers (SMFs) in procuring various inputs to ensure proper crop health and appropriate yields. Under the Scheme, a direct payment of ₹6,000 per year is transferred in three equal installments of ₹2,000 every four months directly into the Aadhar-seeded bank accounts of eligible landholding farmers.</p>
+            
+            <div class="requirements-box">
+                <h4><i class="fa-solid fa-list-check"></i> Requirements to Apply</h4>
+                <ul>
+                    <li>Must be a landholding Small and Marginal Farmer (SMF) family.</li>
+                    <li>Must have a valid Aadhar card linked (seeded) to a bank account.</li>
+                    <li>Completion of the e-KYC process on the PM-Kisan portal is mandatory.</li>
+                    <li>Valid land ownership documents proving cultivable land holding.</li>
+                </ul>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <a href="registration.html" class="btn-primary">Apply / Register Now</a>
+            </div>
+        </div>
+
+        <div class="scheme-detail-card reveal">
+            <span class="category-badge">Finance</span>
+            <h3>Kisan Credit Card (KCC) Interest Subvention Scheme</h3>
+            <p>Provides adequate and timely credit support from the banking system under a single window with flexible and simplified procedures. It helps farmers meet their cultivation, post-harvest, and other agricultural financial needs with reduced interest rates.</p>
+            
+            <div class="requirements-box">
+                <h4><i class="fa-solid fa-list-check"></i> Requirements to Apply</h4>
+                <ul>
+                    <li>Must be an individual farmer, joint borrower, tenant farmer, or sharecropper.</li>
+                    <li>Must possess valid identity proof (Aadhar, PAN, Voter ID).</li>
+                    <li>Requires land ownership records or proof of tenancy/sharecropping.</li>
+                    <li>A passport size photograph and a duly filled application form submitted at the nearest bank branch.</li>
+                </ul>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <a href="registration.html" class="btn-primary">Apply / Register Now</a>
+            </div>
+        </div>
+
+        <div class="scheme-detail-card reveal">
+            <span class="category-badge warning">Insurance</span>
+            <h3>Pradhan Mantri Fasal Bima Yojana (PMFBY)</h3>
+            <p>A comprehensive crop insurance scheme providing financial support to farmers suffering crop loss/damage arising out of unforeseen events. It features an extremely low premium rate to help stabilize the income of farmers and encourage them to adopt innovative agricultural practices.</p>
+            
+            <div class="requirements-box">
+                <h4><i class="fa-solid fa-list-check"></i> Requirements to Apply</h4>
+                <ul>
+                    <li>Open to all farmers growing notified crops in a notified area.</li>
+                    <li>Must have an active bank account.</li>
+                    <li>Aadhar card is mandatory for enrollment.</li>
+                    <li>Sowing certificate or land records confirming the crop being cultivated.</li>
+                </ul>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <a href="registration.html" class="btn-primary">Apply / Register Now</a>
+            </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top: 5rem;">
+            <h2>Past / Replaced Schemes</h2>
+            <p>Schemes that have been concluded or replaced by newer, more efficient initiatives.</p>
+        </div>
+
+        <div class="scheme-detail-card past-scheme reveal">
+            <h3>National Agricultural Insurance Scheme (NAIS)</h3>
+            <p>An older crop insurance scheme intended to provide insurance coverage and financial support to the farmers in the event of failure of any of the notified crops as a result of natural calamities, pests, and diseases.</p>
+            <div class="requirements-box">
+                <h4>Status: Replaced</h4>
+                <p>This scheme has been replaced by the <strong>Pradhan Mantri Fasal Bima Yojana (PMFBY)</strong> which offers lower premiums and more comprehensive coverage for a wider variety of crops.</p>
+            </div>
+        </div>
+        
+        <div class="scheme-detail-card past-scheme reveal">
+            <h3>Modified National Agricultural Insurance Scheme (MNAIS)</h3>
+            <p>A pilot program introduced to improve upon the NAIS by integrating private sector insurers and offering more precise loss assessment at the village/panchayat level rather than the block level.</p>
+            <div class="requirements-box">
+                <h4>Status: Replaced</h4>
+                <p>MNAIS has also been merged into and superseded by the <strong>Pradhan Mantri Fasal Bima Yojana (PMFBY)</strong> for uniform implementation across the country.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col branding">
+                <a href="index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-leaf"></i> AgriConnect
+                </a>
+                <p>Empowering the backbone of our nation. A dedicated portal bridging the gap between farmers and government initiatives.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schemes.html">Schemes & Subsidies</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="registration.html">Farmer Registration</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Important Schemes</h4>
+                <ul>
+                    <li><a href="schemes.html">PM-Kisan</a></li>
+                    <li><a href="schemes.html">Fasal Bima Yojana</a></li>
+                    <li><a href="schemes.html">Kisan Credit Card</a></li>
+                    <li><a href="#">e-NAM</a></li>
+                    <li><a href="#">Soil Health Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-info">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Krishi Bhawan, New Delhi</li>
+                    <li><i class="fa-solid fa-envelope"></i> help@agriconnect.gov</li>
+                    <li><i class="fa-solid fa-phone"></i> Toll-Free: 1800-180-1551</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgriConnect Portal. All rights reserved. Designed for sustainable farming.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

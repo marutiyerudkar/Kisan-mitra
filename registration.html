@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration - AgriConnect</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> AgriConnect
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schemes.html">Govt Schemes</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="registration.html" class="btn-primary">Register</a></li>
+                <li><a href="#contact" class="btn-primary-outline">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Form Section -->
+    <section class="form-section">
+        <div class="form-container reveal">
+            <div class="form-header">
+                <h2>Farmer Registration</h2>
+                <p>Join the AgriConnect network to access schemes, subsidies, and expert services.</p>
+            </div>
+            <form id="registration-form">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" class="form-control" required placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" class="form-control" required placeholder="Enter your last name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" required placeholder="10-digit mobile number">
+                </div>
+
+                <div class="form-group">
+                    <label for="aadhar">Aadhar Number</label>
+                    <input type="text" id="aadhar" class="form-control" required placeholder="12-digit Aadhar number">
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <select id="state" class="form-control" required>
+                        <option value="">Select State</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="karnataka">Karnataka</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="landSize">Land Size (in Acres)</label>
+                    <input type="number" id="landSize" class="form-control" required placeholder="e.g. 5">
+                </div>
+
+                <button type="submit" class="btn-primary form-submit large">Complete Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col branding">
+                <a href="index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-leaf"></i> AgriConnect
+                </a>
+                <p>Empowering the backbone of our nation. A dedicated portal bridging the gap between farmers and government initiatives.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schemes.html">Schemes & Subsidies</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="registration.html">Farmer Registration</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Important Schemes</h4>
+                <ul>
+                    <li><a href="#">PM-Kisan</a></li>
+                    <li><a href="#">Fasal Bima Yojana</a></li>
+                    <li><a href="#">Kisan Credit Card</a></li>
+                    <li><a href="#">e-NAM</a></li>
+                    <li><a href="#">Soil Health Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-info">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Krishi Bhawan, New Delhi</li>
+                    <li><i class="fa-solid fa-envelope"></i> help@agriconnect.gov</li>
+                    <li><i class="fa-solid fa-phone"></i> Toll-Free: 1800-180-1551</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgriConnect Portal. All rights reserved. Designed for sustainable farming.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+    <script src="registration-handler.js"></script>
+</body>
+</html>

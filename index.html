@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect - Farmer Assistance & Schemes Portal</title>
+    <meta name="description" content="Discover agriculture schemes, government assistance, subsidies, and modern farming techniques. A comprehensive portal for farmers.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-leaf"></i> AgriConnect
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schemes.html">Govt Schemes</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="registration.html" class="btn-primary">Register</a></li>
+                <li><a href="#contact" class="btn-primary-outline">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <span class="badge">Empowering Agriculture</span>
+            <h1 class="hero-title">Your Gateway to <span>Government Support</span> & Modern Farming.</h1>
+            <p class="hero-subtitle">Access financial subsidies, crop insurance, equipment loans, and expert agricultural advice all in one centralized national portal.</p>
+            <div class="hero-actions">
+                <a href="#schemes" class="btn-primary">Explore Schemes <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#services" class="btn-secondary">Expert Advisory</a>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Live Schemes</p>
+                </div>
+                <div class="stat-item">
+                    <h3>₹5,000+ Cr</h3>
+                    <p>Subsidies Granted</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10M+</h3>
+                    <p>Farmers Benefited</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container reveal">
+            <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="scheme-search" placeholder="Search for schemes (e.g. Subsidy, Irrigation, Insurance)...">
+                <button class="btn-search">Search</button>
+            </div>
+            <div class="quick-filters">
+                <span>Popular:</span>
+                <button class="filter-tag active" data-filter="all">All</button>
+                <button class="filter-tag" data-filter="finance">Financial Assist.</button>
+                <button class="filter-tag" data-filter="insurance">Crop Insurance</button>
+                <button class="filter-tag" data-filter="equipment">Equipment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Schemes Section -->
+    <section id="schemes" class="schemes-section">
+        <div class="section-header reveal">
+            <h2>Featured Government Schemes</h2>
+            <p>Discover actionable programs designed to boost your agricultural productivity and ensure financial stability.</p>
+        </div>
+        
+        <div class="schemes-grid" id="schemes-grid">
+            <!-- Scheme Card 1 -->
+            <div class="scheme-card reveal" data-category="finance">
+                <div class="card-icon">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge">Finance</span>
+                    <h3>PM-Kisan Samman Nidhi</h3>
+                    <p>Income support of ₹6,000 per year provided to all landholding farmer families across the country in three equal installments.</p>
+                    <ul class="scheme-features">
+                        <li><i class="fa-solid fa-check"></i> Direct Bank Transfer</li>
+                        <li><i class="fa-solid fa-check"></i> 100% Govt Funded</li>
+                    </ul>
+                    <a href="#" class="card-btn">Apply Now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Scheme Card 2 -->
+            <div class="scheme-card reveal" data-category="insurance">
+                <div class="card-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge warning">Insurance</span>
+                    <h3>Fasal Bima Yojana (PMFBY)</h3>
+                    <p>Comprehensive crop insurance scheme providing financial support in the event of failure of any of the notified crops.</p>
+                    <ul class="scheme-features">
+                        <li><i class="fa-solid fa-check"></i> Extremely Low Premium</li>
+                        <li><i class="fa-solid fa-check"></i> Full Insured Amount</li>
+                    </ul>
+                    <a href="#" class="card-btn">Apply Now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Scheme Card 3 -->
+            <div class="scheme-card reveal" data-category="finance">
+                <div class="card-icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge">Finance</span>
+                    <h3>Kisan Credit Card (KCC)</h3>
+                    <p>Access timely and adequate credit for farmers to meet their comprehensive credit requirements for agriculture.</p>
+                    <ul class="scheme-features">
+                        <li><i class="fa-solid fa-check"></i> Reduced Interest Rates</li>
+                        <li><i class="fa-solid fa-check"></i> Flexible Repayment</li>
+                    </ul>
+                    <a href="#" class="card-btn">Apply Now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Scheme Card 4 -->
+            <div class="scheme-card reveal" data-category="equipment">
+                <div class="card-icon">
+                    <i class="fa-solid fa-tractor"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge success">Equipment</span>
+                    <h3>Agri Infrastructure Fund</h3>
+                    <p>Financing facility for investment in viable projects for post-harvest management infrastructure and community farming.</p>
+                    <ul class="scheme-features">
+                        <li><i class="fa-solid fa-check"></i> 3% Interest Subvention</li>
+                        <li><i class="fa-solid fa-check"></i> Credit Guarantee</li>
+                    </ul>
+                    <a href="#" class="card-btn">Apply Now &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Scheme Card 5 -->
+            <div class="scheme-card reveal" data-category="equipment">
+                <div class="card-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge success">Equipment/Irrigation</span>
+                    <h3>Krishi Sinchayee Yojana</h3>
+                    <p>Focuses on improving water use efficiency 'More crop per drop', expanding cultivable area under assured irrigation.</p>
+                    <ul class="scheme-features">
+                        <li><i class="fa-solid fa-check"></i> Micro-irrigation subsidies</li>
+                        <li><i class="fa-solid fa-check"></i> Water conservation</li>
+                    </ul>
+                    <a href="#" class="card-btn">Apply Now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Scheme Card 6 -->
+            <div class="scheme-card reveal" data-category="market">
+                <div class="card-icon">
+                    <i class="fa-solid fa-shop"></i>
+                </div>
+                <div class="card-content">
+                    <span class="category-badge info">Market</span>
+                    <h3>e-NAM (National Agri Market)</h3>
+                    <p>A pan-India electronic trading portal which networks the existing APMC mandis to create a unified national market.</p>
+                    <ul class="scheme-features">
+                        <li><i class="fa-solid fa-check"></i> Transparent Pricing</li>
+                        <li><i class="fa-solid fa-check"></i> Direct access to buyers</li>
+                    </ul>
+                    <a href="#" class="card-btn">Apply Now &rarr;</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all-container reveal">
+            <a href="schemes.html" class="btn-primary-outline large">View All Schemes & Requirements</a>
+        </div>
+    </section>
+
+    <!-- Advisory / CTA Section -->
+    <section class="cta-section reveal">
+        <div class="cta-content">
+            <h2>Need Help Choosing the Right Scheme?</h2>
+            <p>Our expert agricultural advisors can guide you through the application process and help you maximize your benefits.</p>
+            <div class="cta-buttons">
+                <a href="tel:18001801551" class="btn-primary"><i class="fa-solid fa-phone"></i> Call Kisan Helpline</a>
+                <a href="#contact" class="btn-secondary-light"><i class="fa-solid fa-comments"></i> Chat with Expert</a>
+            </div>
+        </div>
+        <div class="cta-image">
+            <div class="pattern-circle"></div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-wrapper reveal">
+            <div class="contact-info-panel">
+                <h2>Get in Touch</h2>
+                <p>Have questions about schemes, subsidies, or need assistance? Our dedicated team is here to help you every step of the way.</p>
+                
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-detail-text">
+                        <h4>Visit Us</h4>
+                        <p>Krishi Bhawan, Dr. Rajendra Prasad Road, New Delhi - 110001</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-detail-text">
+                        <h4>Kisan Helpline</h4>
+                        <p>Toll-Free: 1800-180-1551 (24/7)</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-detail-text">
+                        <h4>Email Us</h4>
+                        <p>help@agriconnect.gov</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h3>Send Us a Message</h3>
+                <p>Fill out the form and we'll respond within 24 hours.</p>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" class="form-control" required placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" class="form-control" required placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Question about PM-Kisan">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" class="form-control" required placeholder="Describe your query or concern..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit large">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col branding">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-leaf"></i> AgriConnect
+                </a>
+                <p>Empowering the backbone of our nation. A dedicated portal bridging the gap between farmers and government initiatives.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schemes.html">Schemes & Subsidies</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="registration.html">Farmer Registration</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Important Schemes</h4>
+                <ul>
+                    <li><a href="#">PM-Kisan</a></li>
+                    <li><a href="#">Fasal Bima Yojana</a></li>
+                    <li><a href="#">Kisan Credit Card</a></li>
+                    <li><a href="#">e-NAM</a></li>
+                    <li><a href="#">Soil Health Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-info">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Krishi Bhawan, New Delhi</li>
+                    <li><i class="fa-solid fa-envelope"></i> help@agriconnect.gov</li>
+                    <li><i class="fa-solid fa-phone"></i> Toll-Free: 1800-180-1551</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgriConnect Portal. All rights reserved. Designed for sustainable farming.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+    <script src="contact-handler.js"></script>
+</body>
+</html>
